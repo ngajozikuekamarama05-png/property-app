@@ -1,0 +1,300 @@
+/* Modern Professional Design - Farmer BJ Enterprises */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f2f5;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* Cards - White with shadow */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats Grid - 4 columns */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.stat-card .number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 8px;
+}
+
+.stat-card .sub {
+  font-size: 13px;
+  color: #10b981;
+  margin-top: 8px;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #0066cc;
+  border: 1px solid #0066cc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: #0066cc10;
+}
+
+.btn-secondary {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #059669;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.logo-text span {
+  color: #0066cc;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #0066cc;
+}
+
+/* Form inputs */
+.input {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px #0066cc20;
+}
+
+/* Quick Actions Grid */
+.quick-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.quick-action-btn {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quick-action-btn:hover {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+}
+
+/* Footer */
+.footer {
+  background: white;
+  border-top: 1px solid #eaeaea;
+  padding: 24px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.footer p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Hero Section for Homepage */
+.hero {
+  background: linear-gradient(135deg, #0066cc 0%, #004099 100%);
+  padding: 80px 32px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.hero-btn-primary {
+  background: white;
+  color: #0066cc;
+  padding: 12px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 12px;
+  background: #f9fafb;
+  font-weight: 600;
+  font-size: 13px;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
